@@ -1,0 +1,48 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="text-center">
+  <u>Cursos de <%= current_user.str_complete_name %></u>
+</h1>
+
+<% if @course.nil? %> 
+  <div class="  pt-3">
+  <h2 class="text-danger">No hay datos registrados, por favor click en Nuevo para Continuar</h2>
+  <p><%= link_to "Nuevo", new_course_path, class: "btn btn-primary" %></p>
+  </div>
+<% else %>
+  <div class="row pt-3">
+	<div class="col-xl-6">
+		<div class="card">
+		  <div class="card-header">
+		    Descripción
+		  </div>
+		  <div class="card-body">
+		    <%= simple_format(@course.name) %>
+		  </div>
+		</div>		
+	</div>
+    
+    <div class="col-xl-6">
+		<div class="card">
+		  <div class="card-header">
+		    Especialidades
+		  </div>
+		  <div class="card-body">
+			  <% @course.course_details.each do |course_detail| %>
+			    <%= course_detail.name %>
+			    
+				<div class="progress">
+				  <div class="progress-bar progress-bar-striped bg-success"  style="width: <%= course_detail.ratio %>%"></div>
+				</div>	   
+				<br> 
+			  <% end %>
+		  </div>
+		</div>	    	
+	 
+
+
+	</div>
+  </div>
+
+  <%= link_to "Editar", edit_course_path(@course.id), class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,33 @@
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#">Currículum <span>Vitae.</span></a></div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Hogar</a></li>
+        <li><a href="#about" class="menu-btn">Sobre mí</a></li>
+        <li><a href="#services" class="menu-btn">Servicios</a></li>
+        <li><a href="#skills" class="menu-btn">Habilidades</a></li>
+        <li><a href="#teams" class="menu-btn">Equipos</a></li>
+        <li><a href="#contact" class="menu-btn">Contacto</a></li>
+
+
+        <% if current_user.present? %>
+       
+        <% else %>
+        <li>
+          <a href="/users/sign_in" class="menu-btn">
+            <i class="fa fa-star"></i> Login
+          </a>
+        </li>
+        <% end %>
+
+
+        <% if current_user.present? %>
+        <li>
+           
+          <%= button_to "Cerrar Sesión" , destroy_user_session_path, method: :delete, class: " "  %>
+        </li>
+        <% end %>        
+      </ul>
+      
+    </div>
+  </nav>

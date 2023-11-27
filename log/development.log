@@ -1,0 +1,142 @@
+Started GET "/" for 127.0.0.1 at 2023-11-27 11:45:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/cv_template.html.erb
+  Rendering home/index.html.erb within layouts/cv_template
+  Rendered home/index.html.erb within layouts/cv_template (Duration: 1.1ms | Allocations: 468)
+  Rendered layouts/_html_head.html.erb (Duration: 0.3ms | Allocations: 200)
+  Rendered layouts/_navbar.html.erb (Duration: 6.3ms | Allocations: 716)
+  Rendered layouts/_home.html.erb (Duration: 0.8ms | Allocations: 341)
+  Rendered layouts/_about.html.erb (Duration: 0.5ms | Allocations: 168)
+  Rendered layouts/_services.html.erb (Duration: 0.5ms | Allocations: 204)
+  Rendered layouts/_skills.html.erb (Duration: 1.0ms | Allocations: 645)
+  Rendered layouts/_courses.html.erb (Duration: 0.8ms | Allocations: 613)
+  Rendered layouts/_teams.html.erb (Duration: 0.4ms | Allocations: 378)
+  Rendered layouts/_contact.html.erb (Duration: 0.4ms | Allocations: 313)
+  Rendered layouts/_map.html.erb (Duration: 0.3ms | Allocations: 155)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 119)
+  Rendered layout layouts/cv_template.html.erb (Duration: 16.3ms | Allocations: 6141)
+Completed 200 OK in 45ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 18336)
+
+
+Started GET "/compa%C3%B1ero2A.jpg" for 127.0.0.1 at 2023-11-27 11:46:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero2A.jpg"):
+  
+Started GET "/compa%C3%B1ero5A.jpg" for 127.0.0.1 at 2023-11-27 11:46:00 -0500
+Started GET "/compa%C3%B1ero4A.jpg" for 127.0.0.1 at 2023-11-27 11:46:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero5A.jpg"):
+  
+Started GET "/compa%C3%B1ero1A.jpg" for 127.0.0.1 at 2023-11-27 11:46:00 -0500
+Started GET "/compa%C3%B1ero3A.jpg" for 127.0.0.1 at 2023-11-27 11:46:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero1A.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero4A.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero3A.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2023-11-27 11:49:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/cv_template.html.erb
+  Rendering home/index.html.erb within layouts/cv_template
+  Rendered home/index.html.erb within layouts/cv_template (Duration: 0.8ms | Allocations: 363)
+  Rendered layouts/_html_head.html.erb (Duration: 0.4ms | Allocations: 200)
+  Rendered layouts/_navbar.html.erb (Duration: 6.0ms | Allocations: 716)
+  Rendered layouts/_home.html.erb (Duration: 0.7ms | Allocations: 341)
+  Rendered layouts/_about.html.erb (Duration: 0.6ms | Allocations: 168)
+  Rendered layouts/_services.html.erb (Duration: 0.4ms | Allocations: 204)
+  Rendered layouts/_skills.html.erb (Duration: 0.9ms | Allocations: 645)
+  Rendered layouts/_courses.html.erb (Duration: 0.9ms | Allocations: 613)
+  Rendered layouts/_teams.html.erb (Duration: 1.0ms | Allocations: 378)
+  Rendered layouts/_contact.html.erb (Duration: 0.5ms | Allocations: 313)
+  Rendered layouts/_map.html.erb (Duration: 0.3ms | Allocations: 155)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 119)
+  Rendered layout layouts/cv_template.html.erb (Duration: 16.3ms | Allocations: 6036)
+Completed 200 OK in 30ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 14637)
+
+
+Started GET "/compa%C3%B1ero3A.jpg" for 127.0.0.1 at 2023-11-27 11:49:07 -0500
+Started GET "/compa%C3%B1ero4A.jpg" for 127.0.0.1 at 2023-11-27 11:49:07 -0500
+Started GET "/compa%C3%B1ero5A.jpg" for 127.0.0.1 at 2023-11-27 11:49:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero3A.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero5A.jpg"):
+  
+Started GET "/compa%C3%B1ero2A.jpg" for 127.0.0.1 at 2023-11-27 11:49:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero2A.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero4A.jpg"):
+  
+Started GET "/compa%C3%B1ero1A.jpg" for 127.0.0.1 at 2023-11-27 11:49:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero1A.jpg"):
+  
+Started GET "/compa%C3%B1ero3A.jpg" for 127.0.0.1 at 2023-11-27 12:00:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero3A.jpg"):
+  
+Started GET "/compa%C3%B1ero5A.jpg" for 127.0.0.1 at 2023-11-27 12:00:04 -0500
+Started GET "/compa%C3%B1ero4A.jpg" for 127.0.0.1 at 2023-11-27 12:00:04 -0500
+Started GET "/compa%C3%B1ero1A.jpg" for 127.0.0.1 at 2023-11-27 12:00:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero5A.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero1A.jpg"):
+  
+Started GET "/compa%C3%B1ero2A.jpg" for 127.0.0.1 at 2023-11-27 12:00:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero2A.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero4A.jpg"):
+  
+Started GET "/compa%C3%B1ero3A.jpg" for 127.0.0.1 at 2023-11-27 12:00:08 -0500
+Started GET "/compa%C3%B1ero4A.jpg" for 127.0.0.1 at 2023-11-27 12:00:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero3A.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero4A.jpg"):
+  
+Started GET "/compa%C3%B1ero5A.jpg" for 127.0.0.1 at 2023-11-27 12:00:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero5A.jpg"):
+  
+Started GET "/compa%C3%B1ero1A.jpg" for 127.0.0.1 at 2023-11-27 12:00:08 -0500
+Started GET "/compa%C3%B1ero2A.jpg" for 127.0.0.1 at 2023-11-27 12:00:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero1A.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero2A.jpg"):
+  
+Started GET "/compa%C3%B1ero3A.jpg" for 127.0.0.1 at 2023-11-27 12:00:10 -0500
+Started GET "/compa%C3%B1ero4A.jpg" for 127.0.0.1 at 2023-11-27 12:00:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero3A.jpg"):
+  
+Started GET "/compa%C3%B1ero5A.jpg" for 127.0.0.1 at 2023-11-27 12:00:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero4A.jpg"):
+  
+Started GET "/compa%C3%B1ero1A.jpg" for 127.0.0.1 at 2023-11-27 12:00:10 -0500
+Started GET "/compa%C3%B1ero2A.jpg" for 127.0.0.1 at 2023-11-27 12:00:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero5A.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero1A.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/compa%C3%B1ero2A.jpg"):
+  

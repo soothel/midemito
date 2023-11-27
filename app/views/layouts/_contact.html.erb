@@ -1,0 +1,68 @@
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contáctame</h2>
+      <div class="contact-content">
+        <div class="column left">
+          <div class="text">Ponerse en contacto</div>
+          <p>Hola, me llamo Alexander Diaz Granados, sería un placer trabajar contigo, soy una persona
+            responsable, innovador y busco soluciones efectivas.
+            Puedes escribirme o llamarme a mi número telefónico ( +51 933 430 561 ) o enviar un mensaje a mi correo
+            electrónico tan solo
+            completando el Formulario. Ponte en contacto.
+            Muchas gracias.</p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Nombre</div>
+                <div class="sub-title">Alexander Diaz Granados</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Dirección</div>
+                <div class="sub-title">Perú - Lima #Jr. Las Geodas - 1941#
+                  <p>(Cerca al Mercado Vencedores)</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Gmail</div>
+                <div class="sub-title">alexanderdiazgranados8@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right">
+          <div class="text">Envíame un mensaje :</div>
+          <form class="formulario" id="form">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" placeholder="Nombre" name="name" id="name" required="">
+              </div>
+              <div class="field email">
+                <input type="email" placeholder="Gmail" name="email" id="email" required="">
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Teléfono" name="phone" id="phone" required="">
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" placeholder="Mensaje.." name="message" id="message" required=""></textarea>
+            </div>
+            <div class="button-area">
+              <input type="submit" id="button" name="enviar">
+            </div>
+          </form>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+          <script type="text/javascript">
+            emailjs.init('MxABKzDD5AaDy1HUz')
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>

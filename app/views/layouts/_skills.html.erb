@@ -1,0 +1,81 @@
+  <section class="skills" id="skills">
+    <div class="max-width">
+      <h2 class="title">Mis Habilidades</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <% if current_user.present?%>
+            <% @skill = Skill.where("user_id = ?", current_user.id).first %>
+            <%= simple_format(@skill.name) %>
+          <% else %>
+          <div class="text">Mis habilidades creativas y experiencias.</div>
+          <p>• Conocimiento en metodologías y técnicas de desarrollo de software.
+          </p><p>• Conocimiento en el desarrollo e instalación de una Máquina Virtual.</p>
+          • Aplicación de modelos matemáticos.
+          <p>• Conocimiento en lenguajes como Python, JavaScript, PHP, entre otros.</p>
+          <p>• Capacidad de resolución de problemas.</p>
+          <p>• Enfoque lógico y metódico.</p>
+          <p>• Buena concentración y trabajo en equipo.</p>
+          <p>• Soy paciente y preciso.</p>
+          <% end %>
+        </div>
+        <div class="column right">
+          <% if current_user.present?%>
+            <% @skill_details = SkillDetail.where("skill_id = ?", @skill.id)  %>
+            <% @skill_details.each_with_index do |skill_detail,index| %>
+            <div class="bars">
+              <div class="info">
+                <span><%= skill_detail.name %></span>
+                <span><%= skill_detail.ratio %>%</span>
+              </div>
+              <div class="line progress_skills_<%= index + 1 %>"></div>
+              <style type="text/css">
+                .skills-content .right .progress_skills_<%= index + 1%>::before{
+                    width: <%= skill_detail.ratio %>%;
+                }
+              </style>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success"  style="width: <%= skill_detail.ratio %>%"></div>
+              </div>                
+            </div>
+            <% end %>
+          <% else %>
+          <div class="bars">
+            <div class="info">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="line html"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>CSS</span>
+              <span>60%</span>
+            </div>
+            <div class="line css"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>JavaScript</span>
+              <span>80%</span>
+            </div>
+            <div class="line js"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>PHP</span>
+              <span>50%</span>
+            </div>
+            <div class="line php"></div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>MySQL</span>
+              <span>70%</span>
+            </div>
+            <div class="line mysql"></div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </section>

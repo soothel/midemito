@@ -1,0 +1,54 @@
+<%= javascript_importmap_tags %>
+
+
+<%= nested_form_for @skill do |form| %>
+  <% if skill.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(skill.errors.count, "error") %> prohibited this skill from being saved:</h2>
+
+      <ul>
+        <% skill.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+   
+
+  <div class="form-group">
+    Comentarios de Habilidades
+    <%= form.text_area :name ,class: "form-control", :rows=> "18" %>
+  </div>
+  
+  <p><%= form.link_to_add "Agregar Habilidades", :skill_details, :data => { :target => "#skill_details" }, class: "btn btn-dark" %></p>
+
+  <table id="skill_details" class="table">
+    <thead>
+    <tr>
+      <td>Nombre</td>
+      <td>Porcentaje</td>
+      <td>Acciones</td>
+    </tr>
+    </thead>
+    <tbody>
+    <%= form.fields_for :skill_details, :wrapper => false do |skill_detail| %>
+      <tr class="fields">
+        <td><%= skill_detail.text_field :name %></td>
+        <td><%= skill_detail.number_field :ratio %></td>
+        <td><%= skill_detail.link_to_remove "Eliminar", class: "btn btn-danger btn-xs" %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+ 
+
+
+  <div>    
+    <%= form.hidden_field :user_id,:value=> current_user.id  %>
+  </div>
+
+  <div>
+ 
+    <button type="submit" class="btn btn-primary">Guardar Datos</button>
+  </div>
+<% end %>
